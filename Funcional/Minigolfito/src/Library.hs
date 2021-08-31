@@ -208,3 +208,42 @@ pierdeLaApuesta puntosDeTorneo
 gano :: [(Jugador, Puntos)] -> (Jugador, Puntos) -> Bool
 gano puntosDeTorneo puntosDeUnJugador
     = (all ((< puntosGanados puntosDeUnJugador) . puntosGanados) . filter (/= puntosDeUnJugador)) puntosDeTorneo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+f h j = (>) 15 . sum . filter h . snd . head j
+
+f1 h j = (> 15) . sum . filter h . snd . head j
+
+f2 h = any (>15) . map h
+
